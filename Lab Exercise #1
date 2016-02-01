@@ -1,0 +1,95 @@
+Problem Set #1
+
+1.	data.frame
+class(mtcars)
+2.	vector
+is(precip,“array”) is FALSE
+3.	as.matrix(trees)
+4.	Atlanta
+5.	rmerge<-(trees,precip,mtcars)
+6.	yes
+class(precip)
+7.	mtcars[2,7]=17.02
+mtcars[2,“qsec”]=17.02
+mtcars[,“qsec”][2]=17.02
+mtcars[“qsec”]
+8.	precip[“Juneau”]<-23
+precip["Phoenix"]<-46
+precip["Sacramento"]<-12
+9.	No
+trees[“Girth”]>trees[“Height”]
+10.	A=2,356
+B=392.54
+C=242.1
+(C/B)+A=2356.62
+
+
+
+Problem Set #2
+
+1.	Since you cannot take a sample larger than the population with replace=FALSE, replace=TRUE makes this possible.  Replaces a value of 1 with TRUE.
+2.	as.number(MatrixElements)
+mode(MatrixElements)<-“numeric”
+MyMatrix*1
+3.	all(MyMatrix)
+4.	16
+5.	sum(MyMatrix[,1])
+colSums(MyMatrix)
+6.	 colProds(MyMatrix)
+7.	MyMatrix[which(MyMatrix==10)]<-12
+8.	33
+9.	as.character(MyMatrix[,12])
+10.	> MyMatrix
+     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10] [,11] [,12] [,13]
+[1,]    8    4    7    9    3    2    8    2    9     2     3     5     FALSE
+[2,]    8    6    8   10    5   10    7    9    1    10     8    10     TRUE
+[3,]    1    6    1    6    9    5    5    1    8     4    10     1     FALSE
+[4,]    7    1    5   10    2    2    3    7    7     2     9    10     FALSE
+[5,]    9    6    7    5    9    9    7    1    4     3    10     2     TRUE
+[6,]    1    2    9    9    2   10    8   10   10     4     7     3     TRUE
+[7,]    9    9    1    2   10    6    6    9    7    10     8     8     TRUE
+[8,]    8    3    7    7    7   10    7    7    7     7     4     3     TRUE
+
+
+
+Problem Set #3
+
+1.	subiris<-function(x){df1<-data.frame(subset(x,Species=="setosa"))
++ colnames(df1)<-c("setosa.SL","setosa.SW","setosa.PL","setosa,PW","Species")
++ df2<-data.frame(subset(x,Species=="versicolor"))
++ colnames(df2)<-c("versicolor.SL","versicolor.SW","versicolor.PL","vericolor,PW","Species")
++ df3<-data.frame(subset(x,Species=="virginica"))
++ colnames(df3)<-c(“virginica.SL,"virginica.SW","virginica.PL","virginica.PW","Species")
++ df1$Species<-NULL;df2$Species<-NULL;df3$Species<-NULL
++ d<-data.frame(df1,df2,df3)
++ return(d)
++ }
+2.	ifelse(Sepal.Width>3.1,Sepal.Length+Petal.Length,ifelse(Sepal.Width<3.1,
++ Sepal.Length-Petal.Length,NA))
+  [1]  6.5  3.5  6.0   NA  6.4  7.1  6.0  6.5  3.0   NA  6.9  6.4  3.4  3.2  7.0  7.2  6.7
+ [18]  6.5  7.4  6.6  7.1  6.6  5.6  6.8  6.7  3.4  6.6  6.7  6.6  6.3   NA  6.9  6.7  6.9
+ [35]   NA  6.2  6.8  6.3  3.1  6.6  6.3  3.2  5.7  6.6  7.0  3.4  6.7  6.0  6.8  6.4 11.7
+ [52] 10.9   NA  1.5  1.9  1.2 11.0  1.6  2.0  1.3  1.5  1.7  2.0  1.4  2.0   NA  1.1  1.7
+ [69]  1.7  1.7 10.7  2.1  1.4  1.4  2.1  2.2  2.0  1.7  1.5  2.2  1.7  1.8  1.9  0.9  0.9
+ [86] 10.5   NA  1.9  1.5  1.5  1.1  1.5  1.8  1.7  1.4  1.5  1.5  1.9  2.1  1.6 12.3  0.7
+[103]  1.2  0.7  0.7  1.0  0.4  1.0  0.9 13.3 11.6  1.1  1.3  0.7  0.7 11.7  1.0 14.4  0.8
+[120]  1.0 12.6  0.7  1.0  1.4 12.4 13.2  1.4  1.2  0.8  1.4  1.3 14.3  0.8  1.2  0.5  1.6
+[137] 11.9   NA  1.2   NA   NA   NA  0.7 12.7 12.4  1.5  1.3  1.3 11.6  0.8
+3.	library(dplyr)
+> library(magrittr)
+> avgbycyl<-function(x){
++ car_data<-mtcars%>%subset(cyl==x)
++ return(mean(car_data$mpg))
++ }
+4.	
+
+
+
+Problem Set #4
+
+1.	mean= 34.88571
+median= 36.6
+standard deviation= 13.70665
+2.	Barplot; shows each unique value
+
+
