@@ -1,3 +1,5 @@
+> Final grade is 17.6/20
+
 ## Part I Questions
 
 > Your answers are reasonable, but you were supposed to list which specimesn you thought belonged to which species. -1 Point
