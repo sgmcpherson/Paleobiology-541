@@ -1,8 +1,8 @@
-> Final grade is 17.6/20
+> Final grade is 17.2/20
 
 ## Part I Questions
 
-> Your answers are reasonable, but you were supposed to list which specimesn you thought belonged to which species. -1 Point
+> Your answers are reasonable, but you were supposed to list which specimens you thought belonged to which species. -1 Point
 
 1) I recognize three species, those with shell ridges, those without shell ridges, and individuals with larger U/D.
 
@@ -64,7 +64,7 @@
 
 9) 	
 	1. paraphyletic 
- 	2. <strike>monophyletic</strike> polyphyletic
+ 	2. monophyletic
  	3. paraphyletic 
  	4. monophyletic 
  	5. polyphyletic 
@@ -74,8 +74,7 @@
 1) D: peramorphosis, E: paedomorphosis
 
 2) Gryphaea mccullochi?
-> Yes!
 
-3) <strike> peramorphosis?
+3) <strike>peramorphosis?</strike>
 
 > Paedomorphosis, - 0.5 points
