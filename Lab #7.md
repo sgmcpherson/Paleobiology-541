@@ -1,6 +1,8 @@
-Lab #7 
+## Lab #7 
 
-Problem Set #1
+> 20/20
+
+## Problem Set #1
 
 	1.	max_ma: returns only records whose temporal locality is at least ____ years old, in Ma
 	min_ma: returns only records whose temporal locality is at most ____ years old, in Ma
@@ -10,12 +12,14 @@ Problem Set #1
 
 	3.	>tapply(DataPBDB[,”min_ma”],DataPBDB[,“genus”],min)
 
-	4.	> MaxOccur<-sort(table(DataPBDB[,"genus"]))
+	4.	
+
+	> MaxOccur<-sort(table(DataPBDB[,"genus"]))
 	> dim(MaxOccur)
 	[1] 1018
 	> MaxOccur[1018]
 	Anadara 
-   		1916 
+   		1916
 
 	5.	> Anadara<-subset(DataPBDB,genus="Anadara")
 		> max(Anadara[,"max_ma"])
@@ -23,7 +27,7 @@ Problem Set #1
 		> min(Anadara[,"min_ma"])
 		[1] 0
 
-Problem Set #2
+## Problem Set #2
 
 	1.	mean(sample(Lucina[,“paleolng”]),replace=TRUE))
 	
@@ -50,7 +54,7 @@ Problem Set #2
 
 	6.	This means that 95% of the data falls within the 2.5 and 97.5 percentiles. 
 
-Problem Set #3
+## Problem Set #3
 
 	1.	Given the values, it is likely that Lucina is still alive because the estimated extinction is between the present and the future. 
 
@@ -62,13 +66,13 @@ Problem Set #3
  
 	4.	I believe that we should trust the pure reading of the fossil record because the dating for the estimated extinction of Dallarca lines up with the end of the Pliocene period and no earlier fossils have been found; practically speaking, based on levels of deposition and stratigraphy, younger fossils should be relatively easier to find.
 
-Problem Set #4
+## Problem Set #4
 
 	1.	It is unlikely that fossil specimens would be equally, randomly distributed throughout stratigraphical layers.
 
 	2.	It is also unlikely that fossil specimens would be randomly distributed throughout all geographical areas.  For example, certain specimens cannot tolerate extreme environments, therefore the likelihood of them being located in such an area would be low.
 
-Problem Set #5
+## Problem Set #5
 
 	1.	> dim(DataPBDB)
 		[1] 67618    26
