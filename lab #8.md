@@ -1,6 +1,8 @@
+> 20/20 Great Job! And thanks for doing it in markdown.
+
 Lab #8
 
-Problem Set #1
+### Problem Set #1
 
 	1.	North America is currently to the West of its position in the Cretaceous period. 
 	2.	 This line of code plots a function named ModernMap, in the color red with an opacity of 0.33, and adds it to a previous plot without creating a new one. 
@@ -9,10 +11,10 @@ Problem Set #1
 	5.	Since the Albian, there has been more movement North and South. 
 	6.	In the Western Hemisphere, there was been more movement West since the Albian. 
 
-Problem Set #2
+### Problem Set #2
 
 	1.	> PaleoceneEocene<-downloadPaleogeography(Age=56)
-	> plot(PaleoceneEocene,col=rgb(1,0,0,0.33),lty=0)
+		> plot(PaleoceneEocene,col=rgb(1,0,0,0.33),lty=0)
 	2.	> Anthozoa<- downloadPBDB("Anthozoa",StartInterval="Paleocene",StopInterval="Eocene")
 	3.	2,847
 	4.	> colnames(Anthozoa)
@@ -53,7 +55,7 @@ Problem Set #2
 	5.	> points(PaleoceneEocene$paleolng,PaleoceneEocene$paleolat,pch=19, col="blue",cex=1.5)
 	6.	Eurupe, Turkey; appear to be primarily marine, meaning that some marine environment existed in these areas during this time
 
-Problem Set #3
+### Problem Set #3
 	1.	Perissodactyla<-downloadPBDB("Perissodactyla",StartInterval="Paleocene",StopInterval="Oligocene")
 	2.	Perissodactyls are odd-toed ungulates that have simple hindgut, fermenting stomachs.  This order includes three extant families: Equidae,Rhinocerotidae and	Tapiridae, more commonly known as horses, donkeys, and zebras, rhinos, and tapirs respectively. 
 	3.	> which(Perissodactyla[,"collection_no"]==112723)
@@ -64,5 +66,3 @@ Problem Set #3
 		[1] 26
 	6.	Region X was originally southeastern of Africa and then as time passed, it moved northward until combining with Eurasian continent. 
 	7.	Looking at the Paleogene time period using the PB Navigator Tool (as well as the later and former time intervals), it is possible that Perissodactyla could have migrated from region x to China, or the opposite may also be true.  However, it is unlikely that the Perissodactyla species of these regions are unrelated but is does appear that the order first appeared in North America and then moved Eastward across the continents. 
-
-
